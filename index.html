@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Store - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-KY4zZ5+... (truncated) ..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
+  </head>
+
+
+
+  <body class="bg-gradient-to-br from-gray-200 to-gray-200 font-sans">
+    <nav class="bg-gradient-to-br from-gray-200 to-gray-200 shadow-md px-6 py-3 fixed top-0 left-0 right-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-3xl font-extrabold text-blue-700 tracking-wide">Random Store</h1>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-4" id="nav-links">
+          <a href="#about-us"
+            class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-indigo-600 hover:to-blue-500 text-white px-5 py-2.5 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-300">
+            About Us
+          </a>
+          <a href="#contact"
+            class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-indigo-600 hover:to-blue-500 text-white px-5 py-2.5 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-300">
+            Contact Us
+          </a>
+          <a href="shop.html"
+            class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-500 text-white px-5 py-2.5 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-300">
+            Shop Now
+          </a>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-blue-700 text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+
+
+    <!-- Slider Section -->
+    <section
+      class="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden text-white text-center flex items-center justify-center">
+      <!-- Background Slider -->
+      <div class="absolute inset-0 z-0 opacity-[40]">
+        <div id="slider" class="w-full h-full relative">
+          <!-- Slides -->
+          <img src="Slidepic1.jpg"
+            class="slide w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-100"
+            alt="Slide 1" />
+          <img src="Slidepic2.jpg"
+            class="slide w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+            alt="Slide 2" />
+          <img src="Slidepic3.jpg"
+            class="slide w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+            alt="Slide 3" />
+          <img src="Slidepic4.jpg"
+            class="slide w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0"
+            alt="Slide 4" />
+
+          <!-- Left & Right Navigation Buttons -->
+          <button id="prev"
+            class="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-70 text-white p-3 rounded-full z-10">&#10094;</button>
+          <button id="next"
+            class="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-70 text-white p-3 rounded-full z-10">&#10095;</button>
+
+          <!-- Dots -->
+          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot w-3 h-3 rounded-full bg-white opacity-100 cursor-pointer transition" data-index="0"></span>
+            <span class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer transition" data-index="1"></span>
+            <span class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer transition" data-index="2"></span>
+            <span class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer transition" data-index="3"></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- Featured Gadget Section -->
+<section class="my-16 px-4 sm:px-6 text-center">
+  <h3 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-8">Our Products</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Monitor Card 1 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+      <img src="Monitor.png" alt="ASUS ROG Swift PG42UQ 41.5 Inch UHD 4K HDR Gaming Monitor" class="w-full h-40 sm:h-48 object-cover object-center" />
+      <div class="p-4">
+        <h4 class="font-semibold text-lg text-gray-800">ASUS ROG Swift 41.5 Inch UHD 4K
+          Gaming Monitor</h4>
+        <p class="text-sm text-gray-500">Gaming Monitor</p>
+        <p class="text-xl text-blue-600 mt-2">$89,990</p>
+        <a href="shop.html" class="bg-blue-800 hover:bg-blue-700 text-white px-6 py-2 mt-4 rounded-full inline-block">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Tablet Card 2 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+      <img src="Tablet" alt="TECLAST T50 Plus" class="w-full h-40 sm:h-48 object-cover object-center" />
+      <div class="p-4">
+        <h4 class="font-semibold text-lg text-gray-800">TECLAST T50 Plus Unisoc T620 6GB 256GB 11 inch Android Tablet</h4>
+        <p class="text-sm text-gray-500">Primium Edition</p>
+        <p class="text-xl text-blue-600 mt-2">$74,700</p>
+        <a href="shop.html" class="bg-blue-800 hover:bg-blue-700 text-white px-6 py-2 mt-4 rounded-full inline-block">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Laptop Card 3 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+      <img src="Asus-vivobook.jpg" alt="Asus-vivobook" class="w-full h-40 sm:h-48 object-cover object-center" />
+      <div class="p-4">
+        <h4 class="font-semibold text-lg text-gray-800">Asus VivoBook 15 K513EP Core i5 11th Gen 15.6" FHD Laptop</h4>
+        <p class="text-sm text-gray-500">Letest Edition</p>
+        <p class="text-xl text-blue-600 mt-2">$79,120</p>
+        <a href="shop.html" class="bg-blue-800 hover:bg-blue-700 text-white px-6 py-2 mt-4 rounded-full inline-block">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Processor Card 4 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+      <img src="core-i9.jpg" alt="Processor" class="w-full h-40 sm:h-48 object-cover object-center" />
+      <div class="p-4">
+        <h4 class="font-semibold text-lg text-gray-800">Intel 11th Gen Core i9-11900F Rocket Lake Processor</h4>
+        <p class="text-sm text-gray-500">Limited Edition</p>
+        <p class="text-xl text-blue-600 mt-2">$99,900</p>
+        <a href="shop.html" class="bg-blue-800 hover:bg-blue-700 text-white px-6 py-2 mt-4 rounded-full inline-block">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- About Us Section -->
+    <section id="about-us" class="px-6 py-16 bg-white text-center">
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">About Us</h3>
+      <p class="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed">
+        At <span class="text-blue-600 font-semibold">Random Store</span>, we make finding anything you need simple and exciting. Whether you're looking for the latest gadgets, everyday essentials, home goods, or unique finds — we've got you covered. Our goal is to offer a massive variety of top-quality products with great deals, making sure every shopper finds exactly what they're looking for with complete peace of mind.
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Trusted Deals</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Top Brands</span>
+        <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium">Customer Focused</span>
+      </div>
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="px-6 py-20 bg-gray-150 text-center">
+      <h3 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500 mb-6">
+        Contact Us
+      </h3>
+      <p class="text-gray-600 text-lg mb-8">Have questions or need support? We’re here to help!</p>
+
+      <div class="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-6">
+        <div class="flex items-center gap-4">
+          <i class="fas fa-envelope text-2xl text-blue-600"></i>
+          <p class="text-gray-700 text-lg">
+            Email:
+            <a href="mailto:support@drivesecure.com" class="text-blue-600 underline hover:text-blue-800">
+              support@randomstore.com
+            </a>
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <i class="fas fa-phone text-2xl text-green-600"></i>
+          <p class="text-gray-700 text-lg">Phone: +8801812-345678</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Modern Footer -->
+    <footer class="bg-gray-900 text-white py-10 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <!-- Company Info -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Random Store</h4>
+          <p class="text-gray-400">Get all your items securely with us. Shop everything, shop smart.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="#about-us" class="hover:text-white">About Us</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            <li><a href="shop.html" class="hover:text-white">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Follow Us</h4>
+          <div class="flex justify-center md:justify-start space-x-4 mt-4">
+            <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-youtube text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm mt-8">
+        © 2025 Random Store. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Slider Script -->
+    <script>
+      window.onload = function () {
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+
+        let current = 0;
+        let interval = setInterval(nextSlide, 3000);
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.remove("opacity-100");
+            slide.classList.add("opacity-0");
+            dots[i].classList.remove("opacity-100");
+            dots[i].classList.add("opacity-50");
+          });
+          slides[index].classList.add("opacity-100");
+          slides[index].classList.remove("opacity-0");
+          dots[index].classList.add("opacity-100");
+          dots[index].classList.remove("opacity-50");
+        }
+
+        function nextSlide() {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        }
+
+        function prevSlide() {
+          current = (current - 1 + slides.length) % slides.length;
+          showSlide(current);
+        }
+
+        nextBtn.addEventListener("click", () => {
+          nextSlide();
+          resetInterval();
+        });
+
+        prevBtn.addEventListener("click", () => {
+          prevSlide();
+          resetInterval();
+        });
+
+        dots.forEach(dot => {
+          dot.addEventListener("click", () => {
+            current = parseInt(dot.getAttribute("data-index"));
+            showSlide(current);
+            resetInterval();
+          });
+        });
+
+        function resetInterval() {
+          clearInterval(interval);
+          interval = setInterval(nextSlide, 3000);
+        }
+      };
+    </script>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('hidden');
+        navLinks.classList.toggle('flex');
+        navLinks.classList.toggle('flex-col');
+        navLinks.classList.toggle('bg-white');
+        navLinks.classList.toggle('absolute');
+        navLinks.classList.toggle('top-16');
+        navLinks.classList.toggle('left-6');
+        navLinks.classList.toggle('right-6');
+        navLinks.classList.toggle('rounded-lg');
+        navLinks.classList.toggle('p-4');
+        navLinks.classList.toggle('shadow-lg');
+      });
+    </script>
+
+
+
+  </body>
+
+</html>
