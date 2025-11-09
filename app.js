@@ -98,7 +98,7 @@ function createProductCard(product, reviews) {
     const shipping = Math.round(price * 0.01);
     const totalAmount = price + delivery + taxAmount + shipping;
 
-    if (totalAmount >= 1000000) {
+    if (totalAmount >= 1000) {
       const discounted = Math.round(totalAmount * 0.9);
       discountValue.textContent = `${discounted}`;
       discountedTotal.classList.remove("hidden");
@@ -117,7 +117,7 @@ function createProductCard(product, reviews) {
 
     let finalAmount = totalAmount;
 
-    if (totalAmount >= 1000000 && !discountedTotal.classList.contains("hidden")) {
+    if (totalAmount >= 1000 && !discountedTotal.classList.contains("hidden")) {
       finalAmount = Math.round(totalAmount * 0.9); // Apply 10% discount
     }
 
@@ -253,6 +253,7 @@ async function fetchData() {
     productSlides.appendChild(slideWrapper);
   }
 }
+
 
 
 fetchData();
